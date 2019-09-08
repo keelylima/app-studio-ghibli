@@ -32,4 +32,8 @@ export class MovieDetailsComponent implements OnInit {
       });
   }
 
+  goBack(): void {
+    this.location.back();
+  }
+
 }

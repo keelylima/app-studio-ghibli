@@ -12,5 +12,6 @@
         <li>
             <p [hidden]="movie.release_date < date">Score: {{movie.rt_score}}</p>
         </li>
+        <button (click)="goBack()">Go Back!</button>
     </ul>
 </div>
