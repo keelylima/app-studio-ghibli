@@ -1,0 +1,16 @@
+<div *ngIf="movie">
+    <ul>
+        <li>
+            <h2>{{movie.title}}</h2>
+        </li>
+        <li>
+            <p>{{movie.description}}</p>
+        </li>
+        <li>
+            <p>Ano: {{movie.release_date}}</p>
+        </li>
+        <li>
+            <p [hidden]="movie.release_date < date">Score: {{movie.rt_score}}</p>
+        </li>
+    </ul>
+</div>

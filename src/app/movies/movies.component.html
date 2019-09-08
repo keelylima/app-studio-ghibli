@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Movies</h2>
+    <ul>
+        <li *ngFor="let movie of movies">
+            <h3>{{movie.title}}</h3>
+            <p>{{movie.description}}</p>
+     
+                <button routerLink="/details/{{movie.id}}">See More</button>
+
+        </li>
+    </ul>
+</div>
