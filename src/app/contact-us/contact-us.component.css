@@ -1,0 +1,33 @@
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    background: #C9FFBF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(#FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+li.selected {
+    background: antiquewhite;
+}
+
+.card {
+    padding-top: 30px;
+}
+
+
+

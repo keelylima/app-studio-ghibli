@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MoviesService } from './movies.service';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieDetailsComponent,
-    MoviesComponent
+    MoviesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

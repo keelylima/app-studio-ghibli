@@ -1,0 +1,16 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let movie of movies" 
+        [class.selected]="selected(movie.id)"
+        (click)="onSelect(movie.id)">
+            <h3>{{movie.title}}</h3>
+            <p>{{movie.description}}</p>
+            <div *ngIf="showMovie(movie.id)">
+                <div class="card">
+                    <p>{{movie.producer}}</p>
+                    <p>{{movie.release_date}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -8,7 +8,7 @@ import { MoviesService } from '../movies.service';
 })
 export class MoviesComponent implements OnInit {
 
-  movies: Array<any>;
+  movies: Array<any>; //funciona sem (?)
 
   constructor(private moviesService: MoviesService) { }
 
